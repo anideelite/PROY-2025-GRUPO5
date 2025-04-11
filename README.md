@@ -8,7 +8,7 @@ Repositorio del grupo 5 para el proyecto del ramo *Proyecto Inicial* – 2025.
 | ----------------- | -------------- | ------------------------ | ------------ |
 | Catalina Saez | @usuario1      | csaezg@usm.cl | 202530036-2 |
 | Constanza Osorio | @usuario2      | cosorion@usm.cl | 202530040-0|
-| Anibal Gonzalez | @usuario3      | agonzalezch@usm.cl | 202530017-6 |
+| Anibal Gonzalez | @anideelite     | agonzalezch@usm.cl | 202530017-6 |
 
 ---   dfdf
 
