@@ -1,15 +1,14 @@
-# PROY-2025-GRUPOX
+# PROY-2025-GRUPO5
 
-Repositorio del grupo X para el proyecto del ramo *Proyecto Inicial* – 2025.
+Repositorio del grupo 5 para el proyecto del ramo *Proyecto Inicial* – 2025.
 
 ## 👥 Integrantes del grupo
 
 | Nombre y Apellido | Usuario GitHub | Correo USM               | Rol          |
 | ----------------- | -------------- | ------------------------ | ------------ |
-| Nombre1 Apellido1 | @usuario1      | nombre1.apellido1@usm.cl | 200000000000 |
-| Nombre2 Apellido2 | @usuario2      | nombre2.apellido2@usm.cl | 200000000000 |
-| Nombre3 Apellido3 | @usuario3      | nombre3.apellido3@usm.cl | 200000000000 |
-| Nombre4 Apellido4 | @usuario4      | nombre4.apellido4@usm.cl | 200000000000 |
+| Catalina Saez | @usuario1      | csaezg@usm.cl | 202530036-2 |
+| Constanza Osorio | @usuario2      | cosorion@usm.cl | 202530040-0|
+| Anibal Gonzalez | @usuario3      | agonzalezch@usm.cl | 202530017-6 |
 
 ---   dfdf
 
