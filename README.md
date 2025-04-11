@@ -6,9 +6,9 @@ Repositorio del grupo 5 para el proyecto del ramo *Proyecto Inicial* – 2025.
 
 | Nombre y Apellido | Usuario GitHub | Correo USM               | Rol          |
 | ----------------- | -------------- | ------------------------ | ------------ |
-| Catalina Saez | @usuario1      | csaezg@usm.cl | 202530036-2 |
-| Constanza Osorio | @usuario2      | cosorion@usm.cl | 202530040-0|
-| Anibal Gonzalez | @anideelite     | agonzalezch@usm.cl | 202530017-6 |
+| Catalina Saez | @crxtalyy      | csaezg@usm.cl | 202530036-2 |
+| Constanza Osorio | @nini-ui     | cosorion@usm.cl | 202530040-0|
+| Anibal Gonzalez | @anideelite      | agonzalezch@usm.cl | 202530017-6 |
 
 ---   dfdf
 
@@ -21,12 +21,10 @@ Repositorio del grupo 5 para el proyecto del ramo *Proyecto Inicial* – 2025.
 ## 🎯 Objetivos
 
 - Objetivo general:
-  - El objetivo del proyecto music-picker, es mediante musica alivianar las emociones negativas y elevar las positivas al momento con un dispositivo que identifique emociones segun sus latidos
+  - *Describir el objetivo principal del proyecto.*
 - Objetivos específicos:
-- investigar la relacion latidos del corazon/emociones.
-- programar el dispositivo
-- Que mediante la rasberry el dispositivo consiga identificar de a poco diferentes emociones.
-- 
+  - *Listar objetivos concretos que permitirán alcanzar el objetivo general.*
+
 ---
 
 ## 🧩 Alcance del proyecto
