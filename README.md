@@ -21,10 +21,12 @@ Repositorio del grupo 5 para el proyecto del ramo *Proyecto Inicial* – 2025.
 ## 🎯 Objetivos
 
 - Objetivo general:
-  - *Describir el objetivo principal del proyecto.*
+  - El objetivo del proyecto music-picker, es mediante musica alivianar las emociones negativas y elevar las positivas al momento con un dispositivo que identifique emociones segun sus latidos
 - Objetivos específicos:
-  - *Listar objetivos concretos que permitirán alcanzar el objetivo general.*
-
+- investigar la relacion latidos del corazon/emociones.
+- programar el dispositivo
+- Que mediante la rasberry el dispositivo consiga identificar de a poco diferentes emociones.
+- 
 ---
 
 ## 🧩 Alcance del proyecto
