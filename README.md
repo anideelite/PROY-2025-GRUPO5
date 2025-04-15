@@ -66,7 +66,7 @@ Repositorio del grupo 5 para el proyecto del ramo *Proyecto Inicial* – 2025.
 ## 📅 Cronograma de trabajo
 
 
-[Carta Gantt](https://google.com)
+[Carta Gantt](file:///C:/Users/catal/OneDrive/Escritorio/Diagrama%20de%20Gantt%20Proyecto%20inicial.pdf)
 
 ---
 
