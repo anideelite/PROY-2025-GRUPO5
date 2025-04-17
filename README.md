@@ -28,9 +28,11 @@ Los elementos que utilizaremos para llevar a cabo el proyecto son:
 ## 🎯 Objetivos
 
 - Objetivo general:
-  - *Describir el objetivo principal del proyecto.*
+  - *El objetivo del proyecto music-picker, es mediante musica alivianar las emociones negativas y elevar las positivas al momento con un dispositivo que identifique emociones segun sus latidos.*
 - Objetivos específicos:
-  - *Listar objetivos concretos que permitirán alcanzar el objetivo general.*
+  - *- Investigar la relacion latidos del corazon/emociones.
+  - Programar el dispositivo.
+  - Que mediante la rasberry el dispositivo consiga identificar de a poco diferentes emociones.*
 
 ---
 
