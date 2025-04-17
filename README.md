@@ -30,9 +30,9 @@ Los elementos que utilizaremos para llevar a cabo el proyecto son:
 - Objetivo general:
   - *El objetivo del proyecto music-picker, es mediante musica alivianar las emociones negativas y elevar las positivas al momento con un dispositivo que identifique emociones segun sus latidos.*
 - Objetivos específicos:
-  - *- Investigar la relacion latidos del corazon/emociones.
+  - Investigar la relacion latidos del corazon/emociones.
   - Programar el dispositivo.
-  - Que mediante la rasberry el dispositivo consiga identificar de a poco diferentes emociones.*
+  - Que mediante la rasberry el dispositivo consiga identificar de a poco diferentes emociones.
 
 ---
 
@@ -75,11 +75,8 @@ Los elementos que utilizaremos para llevar a cabo el proyecto son:
 ## 📅 Cronograma de trabajo
 
 
-<<<<<<< HEAD
-[Carta Gantt]()
-=======
 [Carta Gantt](https://drive.google.com/file/d/1qpgkW8skJyOqvOBeiSnrYWa-JTEYBuSH/view?usp=sharing)
->>>>>>> 1a8d7e19db0b5c6c31da7a3d354eb61f2410cbbe
+
 
 ---
 
