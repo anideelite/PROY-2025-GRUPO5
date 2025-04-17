@@ -27,11 +27,12 @@ Los elementos que utilizaremos para llevar a cabo el proyecto son:
 ## 🎯 Objetivos
 
 - Objetivo general:
-  - *El objetivo del proyecto music-picker, es mediante musica alivianar las emociones negativas y elevar las positivas al momento con un dispositivo que identifique emociones segun sus latidos.*
+  - *Determinar mediante la frecuencia cardiaca distintos estados de ánimo y como la música puede influenciar el comportamiento de estos al entregar gracias a una raspberry pi pico 2 W una seleccion de canciones que estimulen el cambio anímico.*
 - Objetivos específicos:
-  - Investigar la relacion latidos del corazon/emociones.
-  - Programar el dispositivo.
-  - Que mediante la rasberry el dispositivo consiga identificar de a poco diferentes emociones.
+  - Desarrollar un sistema que permita la lectura de la frecuencia cardiaca con una raspberry pi pico 2 W.
+  - Indagar sobre la relacion que existe entre la frecuencia cardiaca y los diferentes estados anímicos.
+  - Investigar de que manera influye la musica en los cambios de animo y como debe implementarse para producirlos.
+  - Conseguir que la raspberry pi pico 2 W entregue al usuario una determinada lista de reproduccion musical, dependiendo tanto de su frecuencia cardiaca, como de su estado de ánimo.
 
 ---
 
