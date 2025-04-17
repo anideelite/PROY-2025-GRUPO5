@@ -18,7 +18,6 @@ Repositorio del grupo 5 para el proyecto del ramo *Proyecto Inicial* – 2025.
 Music PIcker es una iniciativa que nace desde nuestro gusto en común, la música. Combina la tecnología, salud y el entretenimiento. 
 Nuestro objetivo es desarrollar un sistema basado en una Raspberry Pi Pico 2 W que funcione como un reproductor de musica segun las emociones del usuario, determinadas a partir de su frecuencia cardiaca.
 Queremos crear una experiencia personalizada que combine el bienestar emocional y tecnología, permitiendo que la musica se adapte al ritmo de cada persona. 
-
 Los elementos que utilizaremos para llevar a cabo el proyecto son:
 -Raspberry Pi Pico 2 W
 -Sensor de pulso
