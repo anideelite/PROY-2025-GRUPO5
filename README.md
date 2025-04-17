@@ -45,11 +45,11 @@ Los elementos que utilizaremos para llevar a cabo el proyecto son:
 ## 🛠️ Tecnologías y herramientas utilizadas
 
 - Lenguaje(s) de programación:
-  - Ej: Python, JavaScript, C++
+  - MicroPython
 - Microcontroladores
   - Raspberry Pi Pico W 2
 - Sensores
-
+  - Sensor de pulso
 ---
 
 ## 🗂️ Estructura del repositorio
