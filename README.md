@@ -10,7 +10,6 @@ Repositorio del grupo 5 para el proyecto del ramo *Proyecto Inicial* – 2025.
 | Constanza Osorio | @nini-ui     | cosorion@usm.cl | 202530040-0|
 | Anibal Gonzalez | @anideelite      | agonzalezch@usm.cl | 202530017-6 |
 
----   dfdf
 
 ## 📝 Descripción breve del proyecto
 
