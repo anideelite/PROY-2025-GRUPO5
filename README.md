@@ -38,7 +38,7 @@ Los elementos que utilizaremos para llevar a cabo el proyecto son:
 
 ## 🧩 Alcance del proyecto
 
-> *Definir qué aspectos cubre el proyecto y qué queda fuera del alcance (limitaciones).*
+>Como todo proyecto, "Music PIcker" busca entregar un servivio al usuario que lo utilice, por ende, se comprende que en este caso el receptor requiere conocer su frecuencia cardiaca para así proyectar su estado de ánimo a una playlist dependiendo del resultado obtenido. Es por esta razón, que se definieron objetivos que al ser desarrollados, entreguen un producto que pueda satisfacer las necesidades de quien lo requiera. Se entiende que también existen limitaciones, pues al no contar con tecnología médica refinada, el pulso entregado será más una aproximación que una éxactitud.
 
 ---
 
