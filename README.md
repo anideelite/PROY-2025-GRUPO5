@@ -27,7 +27,7 @@ Los elementos que utilizaremos para llevar a cabo el proyecto son:
 ## 🎯 Objetivos
 
 - Objetivo general:
-  - *Determinar mediante la frecuencia cardiaca distintos estados de ánimo y como la música puede influenciar el comportamiento de estos al entregar gracias a una raspberry pi pico 2 W una seleccion de canciones que estimulen el cambio anímico.*
+  - *Determinar mediante la frecuencia cardiaca distintos estados de ánimo, como la música puede influenciar el comportamiento de estos al entregar gracias a una raspberry pi pico 2 W una seleccion de canciones que estimulen el cambio anímico, esto con el objetivo de que las personas alijeren el estres que esta escondido.*
 - Objetivos específicos:
   - Desarrollar un sistema que permita la lectura de la frecuencia cardiaca con una raspberry pi pico 2 W.
   - Indagar sobre la relacion que existe entre la frecuencia cardiaca y los diferentes estados anímicos.
