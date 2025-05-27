@@ -83,6 +83,7 @@ Los elementos que utilizaremos para llevar a cabo el proyecto son:
 ## 📚 Bibliografía
 
 [Enlace](https://google.com)
+[Web API Spotify](https://developer.spotify.com/documentation/web-api)
 
 ---
 
