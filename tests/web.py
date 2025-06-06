@@ -1,4 +1,5 @@
 import network
+import socket
 
 wlan = network.WLAN(network.STA_IF)
 wlan.active(True)
@@ -8,10 +9,6 @@ if wlan.isconnected():
 else:
     print("No está conectada a una red WiFi.")
     
-
-import socket
-
-# HTML simple con un formulario
 def web_page():
     html = """<!DOCTYPE html>
 <html>
@@ -28,14 +25,13 @@ def web_page():
 </html>"""
     return html
 
-# Iniciar el servidor
 addr = socket.getaddrinfo('0.0.0.0', 80)[0][-1]
 s = socket.socket()
 s.bind(addr)
 s.listen(1)
 
 print('Servidor corriendo. Abre esta dirección en tu navegador:')
-print('http://' + '192.168.135.195')  # 👈 Cambia esto si quieres ver IP real
+print('http://' + '192.168.135.195')  
 
 while True:
     conn, addr = s.accept()
@@ -43,7 +39,6 @@ while True:
     request = conn.recv(1024)
     request = str(request)
 
-    # Detectar pulso en la URL
     pulso = 0
     if '/?pulso=' in request:
         try:
