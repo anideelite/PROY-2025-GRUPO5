@@ -4,8 +4,8 @@ import urequests
 import network
 import gc
 
-ssid = "smms"
-password = "23102006"
+ssid = "ssms"            #sujeto a cambio
+password = "98765432"    #sujeto a cambio
 
 def conectar_wifi():
     wlan = network.WLAN(network.STA_IF)
@@ -68,16 +68,17 @@ def enviar_bpm_al_servidor(promedio):
     finally:
         gc.collect()
         print("Después de enviar: Memoria libre:", gc.mem_free())
+
 max30100_init()
 
 threshold = 13000
-min_interval = 0.6
+min_interval = 0.3
 max_buffer_size = 100
 timestamps = []
 ir_buffer = []
 bpm_list = []
 
-print("🖐️ Sensor funcionando...")
+print("Sensor funcionando...")
 
 while True:
     try:

@@ -49,7 +49,6 @@ s.listen(1)
 print('listening on', addr)
 
 stateis = ""
-# Listen for connections
 while True:
     try:
         cl, addr = s.accept()
