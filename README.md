@@ -72,19 +72,27 @@ Los elementos que utilizaremos para llevar a cabo el proyecto son:
 
 ---
 
+## 💻 Instrucciones de uso
+
+>**
+
+---
+
 ## 📅 Cronograma de trabajo
 
 
-[Carta Gantt](https://drive.google.com/file/d/1qpgkW8skJyOqvOBeiSnrYWa-JTEYBuSH/view?usp=sharing)
+>*[Carta Gantt](https://drive.google.com/file/d/1qpgkW8skJyOqvOBeiSnrYWa-JTEYBuSH/view?usp=sharing)*
 
 
 ---
 
 ## 📚 Bibliografía
 
-[Enlace](https://google.com)
-[Web API Spotify](https://developer.spotify.com/documentation/web-api)
-[Interfaz del oximetro de pulso MAX30100](https://lastminuteengineers-com.translate.goog/max30100-pulse-oximeter-heart-rate-sensor-arduino-tutorial/?_x_tr_sl=en&_x_tr_tl=es&_x_tr_hl=es&_x_tr_pto=tc)
+>*[Enlace](https://google.com)*
+
+>*[Web API Spotify](https://developer.spotify.com/documentation/web-api)*
+
+>*[Interfaz del oximetro de pulso MAX30100](https://lastminuteengineers-com.translate.goog/max30100-pulse-oximeter-heart-rate-sensor-arduino-tutorial/?_x_tr_sl=en&_x_tr_tl=es&_x_tr_hl=es&_x_tr_pto=tc)*
 
 ---
 
