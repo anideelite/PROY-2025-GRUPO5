@@ -76,6 +76,8 @@ Los elementos que utilizaremos para llevar a cabo el proyecto son:*
 
 ## 💻 Instrucciones de uso
 
+![alt text](docs/diagrama.jpeg)
+
 >*t*
 
 ---
