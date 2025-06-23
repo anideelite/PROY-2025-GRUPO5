@@ -30,6 +30,7 @@ Los elementos que utilizaremos para llevar a cabo el proyecto son:*
 
 >- Objetivo general:
  >    - *Determinar mediante la frecuencia cardiaca distintos estados de ánimo, como la música puede influenciar el comportamiento de estos al entregar gracias a una raspberry pi pico 2 W una seleccion de canciones que estimulen el cambio anímico, esto con el objetivo de que las personas alijeren el estres que esta escondido.*
+
 >- Objetivos específicos:
   >   - Desarrollar un sistema que permita la lectura de la frecuencia cardiaca con una raspberry pi pico 2 W.
   >   - Indagar sobre la relacion que existe entre la frecuencia cardiaca y los diferentes estados anímicos.
@@ -57,12 +58,11 @@ Los elementos que utilizaremos para llevar a cabo el proyecto son:*
 ## 🗂️ Estructura del repositorio
 
 ```
-/PROY-2025-GRUPOX
+/PROY-2025-GRUPO5
 │
 ├── docs/               # Documentación general y reportes
 ├── src/                # Código fuente del proyecto
 ├── tests/              # Casos de prueba
-├── assets/             # Imágenes, diagramas, etc.
 └── README.md           # Este archivo
 ```
 
@@ -76,7 +76,7 @@ Los elementos que utilizaremos para llevar a cabo el proyecto son:*
 
 ## 💻 Instrucciones de uso
 
->**
+>*t*
 
 ---
 
