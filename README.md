@@ -90,4 +90,4 @@ Los elementos que utilizaremos para llevar a cabo el proyecto son:
 
 ## 📌 Notas adicionales
 
-> *Espacio para dejar cualquier comentario útil, como pendientes, acuerdos del grupo, consideraciones especiales, etc.*
+> *[Video Proyecto](https://youtu.be/E92vWoTAzts?si=Z2R7ICyxwBZdvsdc)*
