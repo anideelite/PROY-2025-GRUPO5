@@ -14,8 +14,8 @@ Repositorio del grupo 5 para el proyecto del ramo *Proyecto Inicial* – 2025.
 ## 📝 Descripción breve del proyecto
 
 > *Music PIcker es una iniciativa que nace desde nuestro gusto en común, la música. Combina la tecnología, salud y el entretenimiento. 
-Nuestro objetivo es desarrollar un sistema basado en una Raspberry Pi Pico 2 W que funcione como un reproductor de musica segun las emociones del usuario, determinadas a partir de su frecuencia cardiaca.
-Queremos crear una experiencia personalizada que combine el bienestar emocional y tecnología, permitiendo que la musica se adapte al ritmo de cada persona. 
+Nuestro objetivo es desarrollar un sistema basado en una Raspberry Pi Pico 2 W que funcione como un reproductor de música según las emociones del usuario, determinadas a partir de su frecuencia cardíaca.
+Queremos crear una experiencia personalizada que combine el bienestar emocional y tecnología, permitiendo que la música se adapte al ritmo de cada persona. 
 Los elementos que utilizaremos para llevar a cabo el proyecto son:*
 
 >*-Raspberry Pi Pico 2 W*
@@ -29,13 +29,13 @@ Los elementos que utilizaremos para llevar a cabo el proyecto son:*
 ## 🎯 Objetivos
 
 >- Objetivo general:
- >    - *Determinar mediante la frecuencia cardiaca distintos estados de ánimo, como la música puede influenciar el comportamiento de estos al entregar gracias a una raspberry pi pico 2 W una seleccion de canciones que estimulen el cambio anímico, esto con el objetivo de que las personas alijeren el estres que esta escondido.*
+ >    - *Determinar mediante la frecuencia cardíaca distintos estados de ánimo, como la música puede influenciar el comportamiento de estos al entregar gracias a una Raspberry Pi Pico 2 W una selección de canciones que estimulen el cambio anímico, esto con el objetivo de que las personas alijeren el estrés que está escondido.*
 
 >- Objetivos específicos:
-  >   - *Desarrollar un sistema que permita la lectura de la frecuencia cardiaca con una raspberry pi pico 2 W.*
-  >   - *Indagar sobre la relacion que existe entre la frecuencia cardiaca y los diferentes estados anímicos.*
-  >   - *Investigar de que manera influye la musica en los cambios de animo y como debe implementarse para producirlos.*
-  >   - *Conseguir que la raspberry pi pico 2 W entregue al usuario una determinada lista de reproduccion musical, dependiendo tanto de su frecuencia cardiaca, como de su estado de ánimo.*
+  >   - *Desarrollar un sistema que permita la lectura de la frecuencia cardíaca con una raspberry pi pico 2 W.*
+  >   - *Indagar sobre la relación que existe entre la frecuencia cardíaca y los diferentes estados anímicos.*
+  >   - *Investigar de que manera influye la música en los cambios de animo y como debe implementarse para producirlos.*
+  >   - *Conseguir que la Raspberry Pi Pico 2 W entregue al usuario una determinada lista de reproducción musical, dependiendo tanto de su frecuencia cardíaca, como de su estado de ánimo.*
 
 ---
 
