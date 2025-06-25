@@ -71,18 +71,18 @@ Los elementos que utilizaremos para llevar a cabo el proyecto son:*
 
 ## 🧪 Metodología
 
->*Para desarrollar nuestro proyecto, utilizamos una metodología basada en un prototipo rápido. Nuestra prioridad fue contruir un sistema funcional desde etapas tempranas, ir probando lecturas con el sensor y ajustar según los resultados (prueba-error)*
+>*Para desarrollar nuestro proyecto, utilizamos una metodología basada en un prototipo rápido. Nuestra prioridad fue construir un sistema funcional desde etapas tempranas, ir probando lecturas con el sensor y ajustar según los resultados (prueba-error)*
 
->*Seguimos un enfoque iteractivo, desarrollado en varias versiones*
+>*Seguimos un enfoque interactivo, desarrollado en varias versiones:*
 >- *1. Primer prototipo: conexión básica entre el sensor y la Raspberry Pi.*
->- *2. Segundo prototipo: envío de datos al servidor y validacion de la lectura en BPM.*
+>- *2. Segundo prototipo: envío de datos al servidor y validación de la lectura en BPM.*
 >- *3. Tercer prototipo: integración de la API de Spotify para vincular los datos a música.*
 
 >*En cuanto al flujo de trabajo y el uso de Git, gestionamos el control de las versiones usando Git.
 >- *Para el servidor utilizamos un repositorio por separado*
 >- *Cada funcionalidad (lectura del sensor, conexión a wifi, conexión al servidor, reproducción musical) se trabajó en ramas por separado.*
->- *Al finalizar cada parte, se hizo una Pull Reuqest para fucionar a la rama principal (main), despues de hacer las pruebas.*
->- *Lo mismo hicimos en la raspberry pi.*
+>- *Al finalizar cada parte, se hizo una Pull Request para fusionar a la rama principal (main), después de hacer las pruebas.*
+>- *Lo mismo hicimos en la Raspberry Pi.*
 
 ---
 
