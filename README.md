@@ -79,7 +79,7 @@ Los elementos que utilizaremos para llevar a cabo el proyecto son:*
 >- *3. Tercer prototipo: integración de la API de Spotify para vincular los datos a música.*
 
 >*En cuanto al flujo de trabajo y el uso de Git, gestionamos el control de las versiones usando Git.
->- *Para el servidor utilizamos un repositorio por separado*
+>- *Para el servidor, utilizamos un repositorio por separado*
 >- *Cada funcionalidad (lectura del sensor, conexión a wifi, conexión al servidor, reproducción musical) se trabajó en ramas por separado.*
 >- *Al finalizar cada parte, se hizo una Pull Request para fusionar a la rama principal (main), después de hacer las pruebas.*
 >- *Lo mismo hicimos en la Raspberry Pi.*
@@ -88,16 +88,16 @@ Los elementos que utilizaremos para llevar a cabo el proyecto son:*
 
 ## 💻 Instrucciones de uso
 
->*En la carpeta src se encuentran los códigos, uno de ellos para main en la raspberry pi pico 2 w (funcionamiento del sensor y procesamiento de datos) y una carpeta con los códigos necesarios para hacer funcionar el servidor en la nube, en nuestro caso para Render.*
+>*En la carpeta src se encuentran los códigos, uno de ellos para main en la Raspberry Pi Pico 2 W (funcionamiento del sensor y procesamiento de datos) y una carpeta con los códigos necesarios para hacer funcionar el servidor en la nube, en nuestro caso para Render.*
 
 >- *Pasos a seguir:*
->    - *1.- Pruebas del sensor: según el diagrama de conexión que se encuentra abajo, se conecta la raspberry pi con el sensor, ambos se colocan en la breadboard y se conectan con los cables dupont macho-macho. Se hace funcionar el sensor y se verifica que tome datos.*
->    - *2.- Creación del servidor: (Dependiendo de en donde se quiera hacer el servidor, en nuestro caso lo hicimos en la nube sin embargo se puede hacer un servidor desde un PC). Con el codigo que se encuentra en la carpeta de servidor, crear un nuevo repositorio especialmente para el servidor. Al entrar en Render se conecta el nuevo repositorio con Render y al configurarlo, este correo con de acuerdo a este código.*
->    - *3.- API de Spotify: Entrar a la página y crear una API, completando los datos correspondientes, en el apartado de URIs completar con el link del servidor que entregó render anteriormente. Finalizado esto, se entregarán dos datos, Cliente ID y Client Secret, datos que deben ser añadidos a Variables Ambientales en el servidor junto a un apartado más de variable, llamado Redirect URI que es el link que fué añadido anteriormente a la API, esto conectará la cuenta de Spotify con el servidor.*
->    - *4.- Editar datos: Cada código tiene datos que deben ser modificados antes de correrlo, un ejemplo es el internet en el código de la rasperry. Otros datos que pueden ser modificados tambien son las playlist definidas para cada estado de ánimo, esto queda completamente en el gusto personal, en la carpeta servidor/auto_player.py Se modifica playlist_uris con el link de la playlist que se prefiera.*
->    - *5.- Hacer funcionar todo: Luego de completar los datos anteriores debería estar todo listo para funcionar. Los pasos para hacer funcionar todo junto son: Desplegar el último commit en render, una vez actualizado el servidor entrar en el link e iniciar sesión con la misma cuenta con la que se creó la API, entrar a Spotify (importante! si no se detecta la aplicación abierta no se reproducirá música), finalmente correr el código en la raspberry pi y poner el dedo en el sensor.*
+>    - *1.- Pruebas del sensor: según el diagrama de conexión que se encuentra abajo, se conecta la Raspberry Pi con el sensor, ambos se colocan en la breadboard y se conectan con los cables dupont macho-macho. Se hace funcionar el sensor y se verifica que tome datos.*
+>    - *2.- Creación del servidor: (Dependiendo de donde se quiera hacer el servidor, en nuestro caso lo hicimos en la nube sin embargo se puede hacer un servidor desde un PC). Con el código que se encuentra en la carpeta de servidor, crear un nuevo repositorio especialmente para el servidor. Al entrar en Render se conecta el nuevo repositorio con Render y al configurarlo, este corra de acuerdo a este código.*
+>    - *3.- API de Spotify: Entrar a la página y crear una API, completando los datos correspondientes, en el apartado de URIs completar con el link del servidor que entregó render anteriormente. Finalizado esto, se entregarán dos datos, Cliente ID y Client Secret, datos que deben ser añadidos a Variables Ambientales en el servidor junto a un apartado más de variable, llamado Redirect URI que es el link que fue añadido anteriormente a la API, esto conectará la cuenta de Spotify con el servidor.*
+>    - *4.- Editar datos: Cada código tiene datos que deben ser modificados antes de correrlo, un ejemplo es el internet en el código de la Rasperry. Otros datos que pueden ser modificados también son las playlist definidas para cada estado de ánimo, esto queda completamente en el gusto personal, en la carpeta servidor/auto_player.py Se modifica playlist_uris con el link de la playlist que se prefiera.*
+>    - *5.- Hacer funcionar todo: Luego de completar los datos anteriores debería estar todo listo para funcionar. Los pasos para hacer funcionar todo junto son: Desplegar el último commit en render, una vez actualizado el servidor entrar en el link e iniciar sesión con la misma cuenta con la que se creó la API, entrar a Spotify (¡importante si no se detecta la aplicación abierta no se reproducirá música), finalmente correr el código en la Raspberry Pi y poner el dedo en el sensor.*
 
->*Ya debería estar todo funcionando, solo quedá disfrutar de la música según tu ritmo cardiaco.*
+>*Ya debería estar todo funcionando, solo quedá disfrutar de la música según tu ritmo cardíaco.*
 
 ![alt text](docs/diagrama.jpeg)
 
