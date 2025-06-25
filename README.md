@@ -29,19 +29,19 @@ Los elementos que utilizaremos para llevar a cabo el proyecto son:*
 ## 🎯 Objetivos
 
 >- Objetivo general:
- >    - *Determinar mediante la frecuencia cardíaca distintos estados de ánimo, como la música puede influenciar el comportamiento de estos al entregar gracias a una Raspberry Pi Pico 2 W una selección de canciones que estimulen el cambio anímico, esto con el objetivo de que las personas alijeren el estrés que está escondido.*
+ >    - *Determinar, mediante la frecuencia cardíaca distintos estados de ánimo, como la música puede influenciar el comportamiento de estos, al entregar gracias a una Raspberry Pi Pico 2 W, una selección de canciones que estimulen el cambio anímico. Esto con el objetivo de que las personas reduzcan el estrés que está escondido.*
 
 >- Objetivos específicos:
-  >   - *Desarrollar un sistema que permita la lectura de la frecuencia cardíaca con una raspberry pi pico 2 W.*
+  >   - *Desarrollar un sistema que permita la lectura de la frecuencia cardíaca con una Raspberry Pi Pico 2 W.*
   >   - *Indagar sobre la relación que existe entre la frecuencia cardíaca y los diferentes estados anímicos.*
-  >   - *Investigar de que manera influye la música en los cambios de animo y como debe implementarse para producirlos.*
-  >   - *Conseguir que la Raspberry Pi Pico 2 W entregue al usuario una determinada lista de reproducción musical, dependiendo tanto de su frecuencia cardíaca, como de su estado de ánimo.*
+  >   - *Investigar de qué manera influye la música en los cambios de ánimo y como debe implementarse para producirlos.*
+  >   - *Conseguir que la Raspberry Pi Pico 2 W entregue al usuario una determinada lista de reproducción musical, dependiendo tanto de su frecuencia cardíaca, cómo de su estado de ánimo.*
 
 ---
 
 ## 🧩 Alcance del proyecto
 
->*Como todo proyecto, "Music PIcker" busca entregar un servivio al usuario que lo utilice, por ende, se comprende que en este caso el receptor requiere conocer su frecuencia cardiaca para así proyectar su estado de ánimo a una playlist dependiendo del resultado obtenido. Es por esta razón, que se definieron objetivos que al ser desarrollados, entreguen un producto que pueda satisfacer las necesidades de quien lo requiera. Se entiende que también existen limitaciones, pues al no contar con tecnología médica refinada, el pulso entregado será más una aproximación que una éxactitud.*
+>*Como todo proyecto, "Music PIcker" busca entregar un servicio al usuario que lo utilice. Por ende se comprende que, en este caso, el receptor requiere conocer su frecuencia cardíaca para así proyectar su estado de ánimo a una playlist, dependiendo del resultado obtenido. Es por esta razón que se definieron objetivos que al ser desarrollados, entreguen un producto que pueda satisfacer las necesidades de quien lo requiera. Se entiende que también existen limitaciones, pues, al no contar con tecnología médica refinada, el pulso entregado será más una aproximación que una exactitud.*
 
 ---
 
