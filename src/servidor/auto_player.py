@@ -1,11 +1,14 @@
+#Con las nuevas modificaciones este codigo ya no se usa.
+"""
 import time
 import threading
+import random
 from spotipy import Spotify
 from auth import get_token_info
 
 playlist_uris = {
     "relajado": "spotify:playlist:2ObbFHzjAw5yucJ57MbqOn",
-    "normal":   "spotify:playlist:37i9dQZF1DWSoyxGghlqv5",
+    "normal":   "spotify:playlist:5HbYdtp5UcWgQoL4RIn4Nz",
     "agitado":  "spotify:playlist:37i9dQZF1EIgSjgoYBB2M6"
 }
 
@@ -17,6 +20,29 @@ def actualizar_bpm(bpm):
     global ultimo_bpm, bpm_timestamp
     ultimo_bpm = bpm
     bpm_timestamp = time.time()
+
+def reproducir_cancion_aleatoria(sp, playlist_uri):
+    try:
+        playlist = sp.playlist(playlist_uri)
+        tracks = playlist["tracks"]["items"]
+        total_tracks = len(tracks)
+        if total_tracks == 0:
+            print("⚠️ Playlist vacía.")
+            return None
+
+        random_index = random.randint(0, total_tracks - 1)
+        track = tracks[random_index]["track"]
+        track_uri = track["uri"]
+
+        # Reproducir SOLO esta canción
+        sp.start_playback(uris=[track_uri])
+
+        nombre = track["name"]
+        print(f"🎶 Reproduciendo una sola canción: {nombre}")
+        return nombre
+    except Exception as e:
+        print(f"❌ Error al reproducir canción aleatoria: {e}")
+        return None
 
 def reproductor_autonomo():
     global ultimo_bpm, bpm_timestamp, estado_actual
@@ -41,16 +67,6 @@ def reproductor_autonomo():
         sp = Spotify(auth=token_info["access_token"])
 
         try:
-            current = sp.current_playback()
-            if not current:
-                time.sleep(2)
-                continue
-
-            if not current["is_playing"]:
-                print("⏸️ Música pausada manualmente. No se cambia playlist.")
-                time.sleep(5)
-                continue
-
             bpm = ultimo_bpm
             if bpm < 75:
                 nuevo_estado = "relajado"
@@ -60,14 +76,20 @@ def reproductor_autonomo():
                 nuevo_estado = "agitado"
 
             if nuevo_estado != estado_actual:
-                duracion = current["item"]["duration_ms"]
-                progreso = current["progress_ms"]
+                playlist_uri = playlist_uris[nuevo_estado]
 
-                if progreso >= duracion - 1000:
-                    playlist_uri = playlist_uris[nuevo_estado]
-                    sp.start_playback(context_uri=playlist_uri)
-                    estado_actual = nuevo_estado
-                    print(f"▶️ [Cambio de estado] a {nuevo_estado}: {playlist_uri}")
+                # Si algo está sonando, lo pausamos antes de cambiar
+                current = sp.current_playback()
+                if current and current.get("is_playing"):
+                    sp.pause_playback()
+                    time.sleep(1)
+
+                song_name = reproducir_cancion_aleatoria(sp, playlist_uri)
+                estado_actual = nuevo_estado
+                print(f"▶️ [Cambio de estado] a {nuevo_estado}: {playlist_uri}")
+                if song_name:
+                    print(f"   → Canción: {song_name}")
+
         except Exception as e:
             print(f"❌ Error en reproducción automática: {e}")
 
@@ -76,3 +98,4 @@ def reproductor_autonomo():
 def iniciar_reproductor():
     hilo = threading.Thread(target=reproductor_autonomo, daemon=True)
     hilo.start()
+"""

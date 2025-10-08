@@ -1,7 +1,6 @@
 from flask import Flask, redirect, request, render_template
 from auth import sp_oauth, set_token_info
-from bpm_handler import bpm_blueprint
-from auto_player import iniciar_reproductor
+from bpm_handler import bpm_blueprint  
 from spotipy import Spotify
 import os
 
@@ -20,7 +19,7 @@ def login():
 @app.route("/callback")
 def callback():
     code = request.args.get("code")
-    token_info = sp_oauth.get_access_token(code)
+    token_info = sp_oauth.get_access_token(code, as_dict=True)
     set_token_info(token_info)
 
     sp = Spotify(auth=token_info['access_token'])
@@ -30,6 +29,5 @@ def callback():
     return render_template("dashboard.html", user_id=user_id)
 
 if __name__ == "__main__":
-    iniciar_reproductor()
     port = int(os.environ.get("PORT", 5000))
     app.run(host="0.0.0.0", port=port)

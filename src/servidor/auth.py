@@ -2,7 +2,6 @@ import os
 import time
 from spotipy.oauth2 import SpotifyOAuth
 
-# Autenticación para TU cuenta
 sp_oauth = SpotifyOAuth(
     client_id=os.getenv("SPOTIPY_CLIENT_ID"),
     client_secret=os.getenv("SPOTIPY_CLIENT_SECRET"),
@@ -10,7 +9,7 @@ sp_oauth = SpotifyOAuth(
     scope="user-modify-playback-state user-read-playback-state"
 )
 
-_token_info = None  # Guardamos el token globalmente
+_token_info = None
 
 def set_token_info(token):
     global _token_info

@@ -1,9 +1,15 @@
 from flask import Blueprint, request, jsonify
 from spotipy import Spotify
 from auth import get_token_info
-from auto_player import actualizar_bpm
+import random
 
 bpm_blueprint = Blueprint("bpm", __name__)
+
+playlist_uris = {
+    "relajado": "spotify:playlist:2ObbFHzjAw5yucJ57MbqOn",
+    "normal":   "spotify:playlist:5HbYdtp5UcWgQoL4RIn4Nz",
+    "agitado":  "spotify:playlist:37i9dQZF1EIgSjgoYBB2M6"
+}
 
 @bpm_blueprint.route("/bpm", methods=["POST"])
 def recibir_bpm():
@@ -12,25 +18,7 @@ def recibir_bpm():
         return jsonify({"error": "Se requiere el valor 'bpm'"}), 400
 
     try:
-        bpm = int(data.get("bpm"))
-        if bpm <= 0:
-            return jsonify({"error": "BPM inválido"}), 400
-
-        actualizar_bpm(bpm)  # Actualiza el BPM global
-
-        token_info = get_token_info()
-        if not token_info:
-            return jsonify({"error": "Token inválido"}), 403
-
-        sp = Spotify(auth=token_info["access_token"])
-
-        # Verificamos si ya hay algo reproduciéndose
-        current = sp.current_playback()
-        if current and current.get("is_playing"):
-            print(f"🔄 Ya se está reproduciendo algo. BPM recibido: {bpm}")
-            return jsonify({"message": "🎵 Ya hay una canción reproduciéndose"}), 200
-
-        # Determinar el estado según BPM
+        bpm = int(data["bpm"])
         if bpm < 75:
             categoria = "relajado"
         elif bpm <= 110:
@@ -38,20 +26,49 @@ def recibir_bpm():
         else:
             categoria = "agitado"
 
-        playlist_uris = {
-            "relajado": "spotify:playlist:2ObbFHzjAw5yucJ57MbqOn",
-            "normal":   "spotify:playlist:37i9dQZF1DWSoyxGghlqv5",
-            "agitado":  "spotify:playlist:37i9dQZF1EIgSjgoYBB2M6"
-        }
+        token_info = get_token_info()
+        if not token_info:
+            return jsonify({"error": "Token inválido"}), 403
 
-        # Reproducir la playlist correspondiente
-        sp.start_playback(context_uri=playlist_uris[categoria])
-        print(f"▶️ [Manual] Reproduciendo playlist para BPM {bpm} (estado: {categoria})")
+        sp = Spotify(auth=token_info["access_token"])
 
-        return jsonify({
-            "message": f"▶️ Reproduciendo playlist de estado '{categoria}' para BPM {bpm}"
-        }), 200
+        current = sp.current_playback()
+        if current and current.get("is_playing"):
+            track_name = current["item"]["name"]
+            return jsonify({"message": "BPM recibido", "cancion": track_name, "ya_reproduciendo": True}), 200
+
+        playlist_uri = playlist_uris[categoria]
+        playlist = sp.playlist(playlist_uri)
+        tracks = playlist["tracks"]["items"]
+        total_tracks = len(tracks)
+        if total_tracks == 0:
+            return jsonify({"error": "Playlist vacía"}), 500
+
+        random_index = random.randint(0, total_tracks - 1)
+        track = tracks[random_index]["track"]
+        track_uri = track["uri"]
+        sp.start_playback(uris=[track_uri])
+        track_name = track["name"]
+
+        return jsonify({"message": "BPM recibido", "cancion": track_name, "ya_reproduciendo": True}), 200
 
     except Exception as e:
-        print(f"❌ Error en /bpm: {e}")
+        return jsonify({"error": str(e)}), 500
+
+@bpm_blueprint.route("/estado_musica", methods=["GET"])
+def estado_musica():
+    try:
+        token_info = get_token_info()
+        if not token_info:
+            return jsonify({"error": "Token inválido"}), 403
+
+        sp = Spotify(auth=token_info["access_token"])
+        current = sp.current_playback()
+        if current and current.get("is_playing"):
+            cancion = current["item"]["name"]
+            return jsonify({"reproduciendo": True, "cancion": cancion}), 200
+        else:
+            return jsonify({"reproduciendo": False, "cancion": None}), 200
+
+    except Exception as e:
         return jsonify({"error": str(e)}), 500
