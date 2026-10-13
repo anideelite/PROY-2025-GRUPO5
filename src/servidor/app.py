@@ -18,7 +18,14 @@ def login():
 
 @app.route("/callback")
 def callback():
+    error = request.args.get("error")
+    if error:
+        return f"Error devuelto por Spotify: {error}", 400
+
     code = request.args.get("code")
+    if not code:
+        return "No se encontró el código de autorización.", 400
+
     token_info = sp_oauth.get_access_token(code, as_dict=True)
     set_token_info(token_info)
 
@@ -27,7 +34,3 @@ def callback():
     user_id = user_profile.get("id", "desconocido")
 
     return render_template("dashboard.html", user_id=user_id)
-
-if __name__ == "__main__":
-    port = int(os.environ.get("PORT", 5000))
-    app.run(host="0.0.0.0", port=port)
